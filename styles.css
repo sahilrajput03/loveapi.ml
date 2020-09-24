@@ -12,6 +12,10 @@ fieldset{
 }
 a{
   text-decoration: none !important;
+  color: palevioletred
+}
+a:hover{
+  color: pink;
 }
 html{
     /* Below css is for disabling text selection! */
