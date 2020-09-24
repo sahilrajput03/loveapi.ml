@@ -1,0 +1,15 @@
+@font-face{
+  font-family : "MyWebFont";
+  src: url("https://loveapi.ml/centuryGothic.ttf") format("truetype");
+}
+
+html{
+  font-family: MyWebFont;
+}
+
+fieldset{
+  border-radius: 8px;
+}
+a{
+  text-decoration: none !important;
+}
