@@ -29,6 +29,6 @@ html{
 
 }
 html{
-  /* Below is for mobile's on selected link background color. Its necessary coz its disturbing when we click on a link on mobile. */
+  /* Below is for mobile's on selected link background color(isn't a problem with  desktop browsers though). Its necessary coz its disturbing when we click on a link on mobile. */
   -webkit-tap-highlight-color: transparent;
 }
