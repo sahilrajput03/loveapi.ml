@@ -1,0 +1,1 @@
+json-server --no-cors=false -p3000 --watch db.json --host=192.168.18.6 

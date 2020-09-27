@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "MyWebFont";
+  src: url("https://loveapi.ml/centuryGothic.ttf") format("truetype");
+}
+
+html {
+  font-family: MyWebFont;
+}
+
+fieldset {
+  border-radius: 8px;
+}
+a {
+  text-decoration: none !important;
+  color: palevioletred;
+}
+a:hover {
+  color: pink;
+}
+html {
+  /* Below css is for disabling text selection! */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+html {
+  /* Below is for mobile's on selected link background color(isn't a problem with  desktop browsers though). Its necessary coz its disturbing when we click on a link on mobile. */
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  outline: none;
+  border-radius: 20px;
+  background-color: pink;
+}
+.copyable {
+  margin: 20px;
+  position: relative;
+}
+.copyButton {
+  position: absolute;
+  left: 330px;
+  padding: 5px;
+  font-family: "MyWebFont";
+  /* font-weight: bolder; */
+  font-weight: lighter;
+}
+.copyButton:active {
+  background-color: papayawhip;
+}
