@@ -22,10 +22,12 @@ copyableElements.forEach(function (item) {
   // item.parentNode.insertBefore(button, item);/* original code */
   button.addEventListener("click", function (e) {
     e.preventDefault();
-    let copyingText = item.getElementsByTagName("a")[0];
-    console.log(`::myLog::${copyingText} is copied to cliboard, Yikes!!`);
+    // let copyingText = item.getElementsByTagName("a")[0];
+    // console.log(`::myLog::${copyingText} is copied to cliboard, Yikes!!`);
     // console.log(`::myLog::${item.childNodes[1].innerHTML} is copied to cliboard, Yikes!!`);
-    copy(copyingText); /* This works good for my case. */
+    console.log(`some function -> ${copy}`);
+
+    // copy(item.getElementsByTagName("a")[0]); /* This works good for my case. */
     // copy(item.childNodes[1].innerHTML); /* This works good for my case. */
     // copy(item.childNodes[0]);
   });
@@ -35,3 +37,15 @@ copyableElements.forEach(function (item) {
 // Sources:
 // https://stackoverflow.com/questions/31908564/easy-way-to-add-copy-to-clipboard-to-github-markdown
 // https://stackoverflow.com/questions/4793604/how-to-insert-an-element-after-another-element-in-javascript-without-using-a-lib
+// --------------
+// Another copyToClipboard function that actually works with copying code snippets too
+// https://www.30secondsofcode.org/blog/s/copy-text-to-clipboard-with-javascript
+
+// const copyToClipboard = (str) => {/* This works amazingly with code snippets too. */
+//   const el = document.createElement("textarea");
+//   el.value = str;
+//   document.body.appendChild(el);
+//   el.select();
+//   document.execCommand("copy");
+//   document.body.removeChild(el);
+// };
