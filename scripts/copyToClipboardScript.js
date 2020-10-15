@@ -25,9 +25,9 @@ copyableElements.forEach(function (item) {
     // let copyingText = item.getElementsByTagName("a")[0];
     // console.log(`::myLog::${copyingText} is copied to cliboard, Yikes!!`);
     // console.log(`::myLog::${item.childNodes[1].innerHTML} is copied to cliboard, Yikes!!`);
-    console.log(`some function -> ${copy}`);
+    // console.log(`some function -> ${copy}`);
 
-    // copy(item.getElementsByTagName("a")[0]); /* This works good for my case. */
+    copy(item.getElementsByTagName("a")[0]); /* This works good for my case. */
     // copy(item.childNodes[1].innerHTML); /* This works good for my case. */
     // copy(item.childNodes[0]);
   });
